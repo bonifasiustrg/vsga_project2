@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
                 String username = etUsername.getEditText().getText().toString();
                 String password = etPassword.getEditText().getText().toString();
 
-                if (username == "jmp-a" && password == "123") {
+//                if (username == "jmp-a" && password == "123") {
+                if (username.equals("jmp-a") && password.equals("123")) {
                     Intent intent = new Intent(MainActivity.this, DaftarNegaraActivity.class);
                     startActivity(intent);
                 }else{
